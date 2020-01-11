@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario paso 2</title>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="formulario-1.html">01 CUSTOMER INFO</a></li>
+            <li><a href="formulario-2.html">02 SHIPING INFO</a></li>
+            <li><a href="formulario-3.html">03 PAYMENT SELECTION</a></li>
+        </ul>
+    </div>
+    <div>
+        <form action="formulario-3.html">
+            <fieldset>
+            <legend>Shipping Method</legend>
+            <div>
+                <input type="radio" id="standart" name="boton" checked>
+                <label for="standart"><b>Standart Delivery Free</b></label>
+                <p>Estimated 14-20 Day Shipping (Duties and taxes may be due upon delivery)</p>
+            </div>
+            <div>
+                <input type="radio" id="fast" name="boton">
+                <label for="fast"><b>Fast Delivery €8.00</b></label>
+                <p>Estimated 2-5 Days Shipping (Duties and taxes may be due upon delivery)</p>
+            </div>
+            </fieldset>
+        <p><a href="formulario-1.html"> 🡠Back to Customer Info</a></p>
+            <button type="submit">CONTINUE TO PAYMENT</button>
+        </form>
+    </div>  
+
+    <div>
+        <h1>Shopping Cart</h1>
+        <hr>
+        <p>Lightweight College Backpack <br>€ 99.90</p>
+        <img src="images/mochila1.png" alt="mochila negra">
+        <p>Business Casual Leather Watch Waterproof <br>€ 69.90</p>
+        <img src="images/reloj1.jpg" alt="reloj correa marrón">
+        <hr>
+      </div>
+      <div>
+        <label for="voucher"></label><strong>Have a voucher?</strong></label>
+        <select id="voucher">
+            <option selected>...</option>
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select>
+      </div>
+      <hr>
+      <div>
+          <p>Subtotal <br>€ 169.80</p>
+          <p>Shipping <br>Free</p>
+      </div>
+      <hr>
+      <div>
+        <p><strong>Total <br>€ 169.80</strong></p>
+      </div>
+
+</body>
+</html>

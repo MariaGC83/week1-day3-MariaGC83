@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario paso 1</title>
+</head>
+<body>
+<!-- Cabecera -->
+<div>
+    <ul>
+        <li><a href="formulario-1.html">01 CUSTOMER INFO</a></li>
+        <li><a href="formulario-2.html">02 SHIPING INFO</a></li>
+        <li><a href="formulario-3.html">03 PAYMENT SELECTION</a></li>
+    </ul>
+    <br>
+</div><!--// cabecera -->
+
+<!--Formulario-->   
+  <div>
+      <form action="formulario-2.html">
+        <fieldset>
+            <legend>Customer Info</legend>
+            <div>
+                <label for="name">FIRST NAME</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="surname">LAST NAME</label>
+                <input type="text" id="surname">
+            </div>
+            <div>
+                <label for="address">ADDRESS</label>
+                <input type="text" id="address">
+            </div>
+            <!--No estoy muy segura de si es correcto poner fieldset
+                Si lo pongo aquí ¿Tendría que ponerlo también para CP?
+                ¿Englobaría solo country o country y city?La misma pregunta
+                para los demás formularios-->
+            <!--//-->
+            <fieldset>
+                <div>
+                    <label for="country">COUNTRY</label>
+                    <select id="country">
+                        <option selected>Select your country</option>
+                        <option value="">...</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="city">CITY</label>
+                    <input type="text" id="city">
+                </div>
+            </fieldset>
+                <div>
+                    <label for="postalCode">POSTAL CODE</label>
+                    <select id="postalCode">
+                        <option selected><button type="button">Find</button></option>
+                        <!--¿cómo se podría poner "FIND" para sustituir a la flecha?¿Con JS?-->
+                        <!--//-->
+                        <option value="#">...</option>
+                     </select>
+                </div>
+                <div>
+                    <label for="phone">PHONE</label>
+                    <input type="tel" id="phone">
+                </div>
+            </fieldset>
+        </fieldset>
+        
+        <p><a href="..."> 🡠Return to shop</a></p>
+        <input type="submit" value="CONTINUE TO SHIPING"></input>
+      </form>
+  </div>
+  <div>
+    <h1>Shopping Cart</h1>
+    <hr>
+    <p>Lightweight College Backpack <br>€ 99.90</p>
+    <img src="images/mochila1.png" alt="mochila negra">
+    <p>Business Casual Leather Watch Waterproof <br>€ 69.90</p>
+    <img src="images/reloj1.jpg" alt="reloj correa marrón">
+    <hr>
+  </div>
+  <div>
+    <label for="voucher"></label><strong>Have a voucher?</strong></label>
+    <select id="voucher">
+        <option selected>...</option>
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+    </select>
+  </div>
+  <hr>
+  <div>
+      <p>Subtotal <br>€ 169.80</p>
+      <p>Shipping <br>Free</p>
+  </div>
+  <hr>
+  <div>
+    <p><strong>Total <br>€ 169.80</strong></p>
+  </div>
+</div> 
+</body>
+</html>
